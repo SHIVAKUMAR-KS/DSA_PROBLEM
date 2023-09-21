@@ -35,7 +35,7 @@ public class Palindrome {
 }
 
 
-///////////Sultion by String method
+///////////Sultion by String method  which i solved on leetcode
 
 class Solution {
     public boolean isPalindrome(int x) {
