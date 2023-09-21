@@ -1,4 +1,6 @@
 public class Palindrome {
+
+    ////////Interger/////
     public static void main(String[] args) {
 
         int[] arr = {1, 2, 4, 2, 1};
@@ -30,4 +32,24 @@ public class Palindrome {
 
     }
 
+}
+
+
+///////////Sultion by String method
+
+class Solution {
+    public boolean isPalindrome(int x) {
+
+     String s = String.valueOf(x);
+      int n = s.length();
+
+      for(int i =0 ;i<n/2; i++){
+        if (s.charAt(i) != s.charAt(n - i - 1)){
+          return false;
+          
+        }
+        
+      }
+        return true;
+    }
 }
