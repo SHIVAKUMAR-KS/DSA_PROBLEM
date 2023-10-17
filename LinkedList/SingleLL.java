@@ -77,6 +77,70 @@ class SingleLL {
         temp.next=temp.next.next;
     }
 
+     //implimentation of reversal by iterative  of a node in a linked list
+    public void reverseLL(){
+        Node curr =head;
+        Node prev =null;
+        Node nextPtr=null;
+
+        while(curr!=null){
+                nextPtr =curr.next;
+                curr.next=prev;
+                prev=curr;
+                curr=nextPtr;
+        }
+        head=prev;
+        return;
+    }
+
+    //Implimentation of reversal of a linked liat using recursive approach
+    public void revrsalRec(Node curr,Node prev){
+        //last node of a linked list
+        if(curr.next==null){
+            head=curr;
+            curr.next=prev;
+            return;
+        }
+        Node nextPtr =curr.next;
+        curr.next=prev;
+        //recursive function call
+        revrsalRec(nextPtr,curr);
+    }
+
+
+    //Implimentation of finding of middle data in a linked list
+    //Two pointer approach
+    public void middleNode(){
+        Node slow=head,fast=head;
+        while(fast!=null && fast.next!=null){
+            slow=slow.next;
+            fast=fast.next.next;
+        }
+
+        System.out.println("Middle data of a given linked list is "+slow.data);
+    }
+
+    //implimentation of detecting the loop in a linked list
+    //floyds cycle detection algorithm
+    public void delectLoop(){
+        Node slow=head,fast=head;
+        int flag=0;
+        while(slow!=null && fast!=null && fast.next!=null)
+        {
+            slow=slow.next;
+            fast=fast.next.next;
+            if(slow==fast){
+                flag=1;
+                break;
+            }
+        }
+        if(flag==0){
+            System.out.println("No loop detected");
+        }else{
+            System.out.println("Loop is detected");
+        }
+    }
+
 
     // display all the nodes after the insertion
     public void displayLL(){
@@ -117,10 +181,30 @@ class SingleLL {
         System.out.println();
 
 
-        llist.deleteNode(0);
+     /*   llist.deleteNode(0);
         System.out.println("Deletion of a node from a linked list");
         llist.displayLL();
         System.out.println();
+        */
+
+        //llist.reverseLL();//it is used for iterative reverse
+        //llist.revrsalRec(llist.head,null);//it is for by recursive approach
+        //System.out.println("Reversal in a linked list:");
+        //llist.displayLL();
+        //llist.middleNode();
+
+        //circular linked list
+
+        Node temp= llist.head;
+        while(temp.next!=null){
+            temp=temp.next;
+        }
+        temp.next=llist.head;
+
+
+        llist.delectLoop();
+        System.out.println();
+
 
 
     }
