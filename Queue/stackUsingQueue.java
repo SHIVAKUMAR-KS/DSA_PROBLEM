@@ -1,5 +1,8 @@
 package Queue;
-
+//Implimentation of stack using the queue data structure
+//time complexity add-O(n)
+//time complexity remove -O(n)
+//space complexity O(n)
 import java.util.LinkedList;
 import java.util.Queue;
 
