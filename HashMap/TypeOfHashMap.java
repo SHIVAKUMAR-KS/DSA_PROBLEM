@@ -30,7 +30,7 @@ public class TypeOfHashMap {
 
         TreeMap<Integer,String> map2=new TreeMap<>();
         map2.put(3,"shiva");
-        map2.put(1,"Asha");
+        map2.put(1,"Ashan");
         map2.put(7,"Aryan");
         map2.put(5,"jeet");
         map2.put(6,"ayush");
