@@ -10,7 +10,7 @@ public class TypeOfHashMap {
         //unordered return type
         HashMap<Integer,String> map=new HashMap<>();
         map.put(3,"shiva");
-        map.put(1,"Asha");
+        map.put(1,"Ashan");
         map.put(7,"Aryan");
         map.put(5,"jeet");
 
@@ -19,7 +19,7 @@ public class TypeOfHashMap {
         //Order of insertion retained in LinkedHashMAp
         LinkedHashMap<Integer,String> map1=new LinkedHashMap<>();
         map1.put(3,"shiva");
-        map1.put(1,"Asha");
+        map1.put(1,"Ashan");
         map1.put(7,"Aryan");
         map1.put(5,"jeet");
 
