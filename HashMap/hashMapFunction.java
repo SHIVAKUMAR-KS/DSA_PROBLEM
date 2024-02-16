@@ -8,12 +8,12 @@ containsKey()
 
 
  # output:
-  HashMap of the given data is :{1=Shiva, 3=Asha, 5=Karan, 8=Astha}
+  HashMap of the given data is :{1=Shiva, 3=Ashan, 5=Karan, 8=Astha}
 Value for the given key is :Asha
 false
 Updated hashMap :{3=Asha, 5=Karan, 8=Astha}
 HashMap is :
-3:Asha
+3:Ashan
 HashMap is :
 5:Karan
 HashMap is :
@@ -29,7 +29,7 @@ public class hashMapFunction {
         HashMap<Integer,String>hashMap=new HashMap<>();
 
         hashMap.put(1,"Shiva");
-        hashMap.put(3,"Asha");
+        hashMap.put(3,"Ashan");
         hashMap.put(5,"Karan");
         hashMap.put(8,"Astha");
 
