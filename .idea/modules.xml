@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DSA_PROBLEM.iml" filepath="$PROJECT_DIR$/DSA_PROBLEM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_1D_Array/_1D_Array.iml" filepath="$PROJECT_DIR$/_1D_Array/_1D_Array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Graph/untitled/untitled.iml" filepath="$PROJECT_DIR$/Graph/untitled/untitled.iml" />
+    </modules>
+  </component>
+</project>
